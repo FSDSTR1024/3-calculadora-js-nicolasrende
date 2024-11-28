@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="calculadora">
+
+    <div class="header">
+      <input id="display" class="display-input" type="text" disabled />
+      <button id="power">ON</button>
+    </div>
+
+    <div class="other">
+      <button id="clear">AC</button>
+      <button id="clearLastNumber">←</button>
+      <button id="open">(</button>
+      <button id="close">)</button>
+      <button id="decimal">.</button>
+    </div>
+
+    <div class="number-buttons">
+      <button data-number="7">7</button>
+      <button data-number="8">8</button>
+      <button data-number="9">9</button>
+      <button data-number="4">4</button>
+      <button data-number="5">5</button>
+      <button data-number="6">6</button>
+      <button data-number="1">1</button>
+      <button data-number="2">2</button>
+      <button data-number="3">3</button>
+      <button data-number="0">0</button>
+    </div>
+
+    <div class="operations">
+      <button data-operation="+">+</button>
+      <button data-operation="-">-</button>
+      <button data-operation="*">x</button>
+      <button data-operation="/">/</button>
+      <button data-operation="%">%</button>
+    </div>
+
+    <div class="equal">
+      <button id="equal">=</button>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
