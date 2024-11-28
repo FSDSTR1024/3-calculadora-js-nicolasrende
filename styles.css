@@ -1,0 +1,135 @@
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#calculadora {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px; 
+  width: 400px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 2px solid #000000; 
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+#display {
+  grid-column: span 3;
+  height: 70px;
+  font-size: 28px;
+  text-align: right;
+  padding-right: 20px;
+  border: 2px solid #cccccc;
+  background-color: #e0e0e0;
+  color: #000000;
+  border-radius: 10px;
+  line-height: 70px;
+}
+
+#power {
+  width: 50px;
+  height: 50px; 
+  font-size: 14px; 
+  border-radius: 50%; 
+  background-color: #000000; 
+  color: #ffffff; 
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-left: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.other {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 10px;
+}
+
+#clear,
+#clearLastNumber,
+#open,
+#close,
+#decimal {
+  background-color: #e0e0e0;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 5px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.number-buttons {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+button[data-number] {
+  background-color: #ffffff;
+  color: #000000; 
+  font-size: 20px;
+  border-radius: 5px;
+  height: 60px;
+  cursor: pointer;
+}
+
+button[data-number="0"] {
+  grid-column: 2 / span 1;
+}
+
+.operations {
+  grid-column: 4; 
+  display: grid;
+  grid-template-rows: repeat(5, 1fr); 
+  gap: 10px;
+}
+
+button[data-operation] {
+  background-color: #d50000;
+  color: #ffffff; 
+  font-size: 20px;
+  border-radius: 5px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.equal {
+  grid-column: span 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#equal {
+  background-color: #000000;
+  color: #ffffff; 
+  font-size: 24px;
+  width: 150px;
+  height: 70px; 
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
